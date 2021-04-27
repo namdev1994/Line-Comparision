@@ -33,17 +33,20 @@ public class LineComparision {
 		Integer length2= (int)Math.sqrt(f);
 		System.out.println(length2);
 	
-		if (length1.equals(length2))
+		int n=length1.compareTo(length2);
+		System.out.println(n);
+		if(n==0)
 		{
-			System.out.println("Both Lines are Equals");
+			System.out.println("Both Lines Are Equals");
+		}
+		else if(n>0)
+		{
+			System.out.println("First line is greater than second");
 		}
 		else
 		{
-			System.out.println("BOth Lines are not equal");
+			System.out.println("Second line is Greater Than FristLine");
 		}
-
-
-
 	}
 
 }
