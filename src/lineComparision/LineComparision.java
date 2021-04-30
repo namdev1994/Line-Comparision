@@ -38,7 +38,19 @@ public class LineComparision {
 			{
 				System.out.println("The length of line are different");
 			}
-			
+			int check=length1.compareTo(length2);
+			if(check == 0)
+			{
+				System.out.println("The length of line are equals");
+			}
+			else if(check > 0)
+			{
+				System.out.println("The length of line 1 is greater than Second");
+			}
+			else
+			{
+				System.out.println("The length of line 2 is greater than Frist");
+			}
 		}
 		
 		
