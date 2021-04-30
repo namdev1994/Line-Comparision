@@ -21,8 +21,24 @@ public class LineComparision {
 			x2=sc.nextDouble();
 			y1=sc.nextDouble();
 			y2=sc.nextDouble();
-			double length=Math.sqrt((x2 - x1)*(x2 - x1) + (y2 -y1)*(y2 -y1));
-			System.out.println("Length of Line = "+length);
+			Double length1=Math.sqrt((x2 - x1)*(x2 - x1) + (y2 -y1)*(y2 -y1));
+			System.out.println("Length of Line 1 = "+length1);
+			System.out.println("Enter the  Co-ordinates of 2nd Line");
+			x3=sc.nextDouble();
+			x4=sc.nextDouble();
+			y3=sc.nextDouble();
+			y4=sc.nextDouble();
+			Double length2=Math.sqrt((x4 - x3)*(x4 - x3) + (y4 -y3)*(y4 -y3));
+			System.out.println("Length of Line 2 = "+length2);
+			if(length1.equals(length2))
+			{
+				System.out.println("The length of line are equals");
+			}
+			else
+			{
+				System.out.println("The length of line are different");
+			}
+			
 		}
 		
 		
